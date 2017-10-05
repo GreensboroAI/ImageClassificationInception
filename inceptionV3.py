@@ -103,8 +103,6 @@ test_order = test_generator.filenames
 test_steps_per_epoch = np.math.ceil(test_generator.samples / test_generator.batch_size)
 
 predictions = model.predict_generator(generator=test_generator, steps=test_steps_per_epoch, max_queue_size=2)
-#start with just over 5000 to see what output
-# looks like then we will test it over all 3095080
 
 argmax = np.argmax(predictions, axis=1)
 
