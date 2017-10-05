@@ -5,7 +5,7 @@ Using the InceptionV3 model retrain top layers on our data
 We will use a pretrained CNN model with 'imagenet' weights to quickly build an image classification system.
 
 # What packages you need
-Keras, Numpy
+Python with Keras, Numpy
 
 # How you need to structure your data
 Since we are using the Keras flow_from_directory feature to make life easier on us you simply need to have your pictures structured in the following format within your project folder
